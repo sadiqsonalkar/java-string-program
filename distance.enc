@@ -1,0 +1,36 @@
+class distance
+	{
+		double kilometers, meters;
+		public void display(){
+		
+		System.out.println("kilometers:"+kilometers);
+		System.out.println("meters:"+meters);
+		}
+	
+		public distance(){
+		kilometers=0;
+		meters=0;
+		}
+		
+		public distance(double m){
+		kilometers = m * 0.001;
+		meters=m;
+		}
+		
+
+		public distance(int km , int m ){
+		kilometers=km;
+		meters=m;
+		}
+		
+		public static void main(String args[]) {
+		
+		distance d1 =new distance();
+		d1.display();
+		distance d2 =new distance(55);
+		d2.display();
+		distance d3 =new distance(5,26);
+		d3.display();
+		
+	}
+}
